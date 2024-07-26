@@ -2,8 +2,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2; /* Light gray background */
+    font-family: 'Open Sans', sans-serif; /* Example font */
+    background-color: #f2f2f2;
 }
 
 .city {
@@ -32,37 +32,32 @@ body {
 
 /* Specific Element Styles */
 .house {
-    background-color: brown;
-    border: 2px solid black;
-}
-
-.house.small {
-    width: 30px;
-    height: 30px;
+    background-color: #996633; /* A more earthy brown */
+    border: 2px solid #333;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .building {
-    background-color: gray;
+    background-color: #ccc;
     border-radius: 5px;
-}
-
-.building.tall {
-    height: 80px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .tree {
-    background-color: green;
+    background-color: #4CAF50; /* A greener green */
     border-radius: 50%;
-}
-
-.tree.big {
-    width: 70px;
-    height: 70px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .lake {
-    background-color: lightblue;
+    background: linear-gradient(to right, #87CEFA, #00BFFF);
     border-radius: 50%;
 }
 
-/* ... and so on */
+.solar-panel {
+    background: linear-gradient(to bottom right, yellow, orange);
+}
+
+.wind-turbine {
+    transform: rotate(45deg); /* A simple rotation */
+}
