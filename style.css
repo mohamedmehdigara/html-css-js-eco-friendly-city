@@ -1,0 +1,43 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.city {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styles */
+.residential, .commercial, .park, .renewable-energy, .transportation {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Element Styles */
+.house, .building, .store, .office, .tree, .lake, .bench, .solar-panel, .wind-turbine, .hydro-power, .electric-car, .bike-lane, .bus-stop {
+    width: 50px;
+    height: 50px;
+    background-color: lightgray;
+}
+
+/* Specific Element Styles (optional) */
+.house {
+    background-color: brown;
+}
+
+.tree {
+    background-color: green;
+}
+
+/* ... and so on */
