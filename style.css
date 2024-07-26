@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light gray background */
 }
 
 .city {
@@ -17,7 +18,6 @@ body {
 .residential, .commercial, .park, .renewable-energy, .transportation {
     width: 200px;
     height: 200px;
-    border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -28,16 +28,41 @@ body {
 .house, .building, .store, .office, .tree, .lake, .bench, .solar-panel, .wind-turbine, .hydro-power, .electric-car, .bike-lane, .bus-stop {
     width: 50px;
     height: 50px;
-    background-color: lightgray;
 }
 
-/* Specific Element Styles (optional) */
+/* Specific Element Styles */
 .house {
     background-color: brown;
+    border: 2px solid black;
+}
+
+.house.small {
+    width: 30px;
+    height: 30px;
+}
+
+.building {
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.building.tall {
+    height: 80px;
 }
 
 .tree {
     background-color: green;
+    border-radius: 50%;
+}
+
+.tree.big {
+    width: 70px;
+    height: 70px;
+}
+
+.lake {
+    background-color: lightblue;
+    border-radius: 50%;
 }
 
 /* ... and so on */
