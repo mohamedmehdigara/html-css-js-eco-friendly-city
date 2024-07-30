@@ -1,9 +1,8 @@
-/* General Styles */
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif; /* Example font */
-    background-color: #f2f2f2;
+    font-family: 'Open Sans', sans-serif; /* Replace with your preferred font */
+    background-color: #f2f2f2; /* Light gray background */
 }
 
 .city {
@@ -14,7 +13,6 @@ body {
     height: 100vh;
 }
 
-/* Container Styles */
 .residential, .commercial, .park, .renewable-energy, .transportation {
     width: 200px;
     height: 200px;
@@ -22,42 +20,48 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    position: relative; /* For potential absolute positioning of elements */
 }
 
-/* Element Styles */
+/* Base styles for elements */
 .house, .building, .store, .office, .tree, .lake, .bench, .solar-panel, .wind-turbine, .hydro-power, .electric-car, .bike-lane, .bus-stop {
     width: 50px;
     height: 50px;
+    position: relative; /* For potential absolute positioning of elements */
 }
 
-/* Specific Element Styles */
+/* Example styles for specific elements */
 .house {
-    background-color: #996633; /* A more earthy brown */
+    background-color: #996633;
     border: 2px solid #333;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.building {
-    background-color: #ccc;
-    border-radius: 5px;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-}
-
 .tree {
-    background-color: #4CAF50; /* A greener green */
+    background-color: #4CAF50;
     border-radius: 50%;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.lake {
-    background: linear-gradient(to right, #87CEFA, #00BFFF);
-    border-radius: 50%;
+/* Placeholders for customization */
+.house.small {
+    /* Your custom styles */
 }
 
-.solar-panel {
-    background: linear-gradient(to bottom right, yellow, orange);
+.building.tall {
+    /* Your custom styles */
 }
 
-.wind-turbine {
-    transform: rotate(45deg); /* A simple rotation */
+.tree.big {
+    /* Your custom styles */
+}
+
+/* ... and so on */
+
+/* Responsive design (example) */
+@media (max-width: 768px) {
+    .city {
+        height: auto;
+    }
+    /* Other responsive styles */
 }
